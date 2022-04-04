@@ -1,0 +1,21 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+
+// base
+$font-family: "Nunito", sans-serif;
+$content-width: 1300px;
+$container-offset: 20px;
+$container-width: calc($content-width + $container-offset * 2);
+$font-size: 16px;
+
+// colors
+$color-white: #ffffff;
+$color-accent: #4878a6;
+$color-red: #d73838;
+$color-yellow: #fbb13c;
+$color-gray: #838688;
+$color-main: #070c11;
+$color-dark: #2a5275;
+$color-green: #48a69b;
+$color-orange: #f37748;
+$color-light-gray: #c8cacb;

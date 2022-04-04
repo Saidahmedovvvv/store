@@ -1,0 +1,29 @@
+.header {
+  &__top {
+    display: flex;
+    align-items: center;
+    &-center {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  &__item {
+    flex: 0 0 48px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
