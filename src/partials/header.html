@@ -1,7 +1,7 @@
 <header class="header">
   <div class="container header__container">
     <div class="header__top">
-      <div class="logo-block">
+      <div class="header__logo-block">
         <a class="logo" href="#">
           <img src="img/logo.svg" alt="logo">
         </a>
@@ -11,36 +11,41 @@
         <a class="header__top-number" href="#">+7(958)111-95-03</a>
         <div class="header__top-time">Пн-вс: с 10:00 до 21:00</div>
       </div>
+      <div class="header__top-search header-search">
+        <button class="header-search__btn">
+          <svg class="header-search__btn-icon">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+        <input class="header-search__input" type="text" placeholder="Поиск">
+      </div>
       <div class="header__top-actions header-actions">
-        <div class="header-actions__form">
-          <button class="header-actions__search-btn">
-            <svg class="header-actions__btn-icon">
-              <use xlink:href="img/sprite.svg#search"></use>
-            </svg>
-          </button>
-          <input class="header-actions__input" type="text" placeholder="Поиск">
-        </div>
-        <div class="header-actions__item">
+        <a href="#" class="header-actions__item">
           <button class="header-actions__btn header-actions__favorires">
             <svg class="header-actions__favorires-icon">
               <use xlink:href="img/sprite.svg#favorites"></use>
             </svg>
           </button>
-        </div>
+        </a>
         <div class="header-actions__item">
-          <button class="header-actions__btn header-actions__compare">
+          <a href="#" class="header-actions__btn header-actions__compare">
             <svg class="header-actions__compare-icon">
               <use xlink:href="img/sprite.svg#compare"></use>
             </svg>
-          </button>
+          </a>
         </div>
         <div class="header-actions__item">
-          <button class="header-actions__btn header-actions__cart">
+          <a href="#" class="header-actions__btn header-actions__cart">
             <svg class="header-actions__cart-icon">
               <use xlink:href="img/sprite.svg#cart"></use>
             </svg>
-          </button>
+            <span class="header-actions__cart-current">3</span>
+          </a>
+          <!-- <div class="cart">
+            <div class="cart__body"></div>
+          </div> -->
         </div>
+        <button class="header-actions__login">Войти</button>
       </div>
     </div>
     <div class="header__bottom"></div>

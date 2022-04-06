@@ -1,29 +1,102 @@
 .header {
+  &__logo-block {
+    flex: 1 1 310px;
+  }
   &__top {
     display: flex;
     align-items: center;
+    padding: 10px 0;
     &-center {
+      flex: 1 1 564px;
       display: flex;
       align-items: center;
+      > *:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+    &-number {
+      color: $color-main;
+      @media (any-hover: hover) {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    &-time {
+      color: $color-gray;
     }
   }
 }
-.header-actions {
+.header-search {
+  flex: 0 0 107px;
+  min-height: 48px;
   display: flex;
   align-items: center;
-  &__item {
+  justify-content: center;
+  border-bottom: 1px solid $color-light-gray;
+  &__btn {
     flex: 0 0 48px;
-    min-height: 48px;
+    height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    &-icon {
+      width: 24px;
+      height: 24px;
+      fill: $color-white;
+      stroke-width: 2px;
+      stroke: $color-gray;
+    }
+  }
+  &__input {
+    width: 100%;
+    outline: none;
+    color: $color-gray;
+  }
+}
+.header-actions {
+  flex: 1 1 319px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  > *:not(:last-child) {
+    margin-right: 28px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   &__btn {
     display: flex;
     align-items: center;
     justify-content: center;
     svg {
-      width: 15px;
-      height: 15px;
+      width: 18px;
+      height: 18px;
+      fill: $color-gray;
     }
+  }
+  &__cart {
+    position: relative;
+    padding-right: 20px;
+    &-current {
+      position: absolute;
+      right: -10px;
+      top: -14px;
+      background-color: $color-dark;
+      border-radius: 64px;
+      font-weight: 500;
+      font-size: 14px;
+      color: $color-white;
+      padding: 2px 6px;
+    }
+  }
+  &__login {
+    padding: 16px 26px;
+    font-weight: 500;
+    color: $color-white;
+    background-color: $color-dark;
+    border-radius: $border-radius;
   }
 }
